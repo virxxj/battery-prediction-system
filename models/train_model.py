@@ -38,7 +38,7 @@ def prepare_data(data, sequence_length=10):
 
     return np.array(X), np.array(y)
 
-def train_model(model, X_train, y_train, num_epochs=200, learning_rate=0.001):
+def train_model(model, X_train, y_train, num_epochs=100, learning_rate=0.005):
     criterion = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
     
