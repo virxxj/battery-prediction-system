@@ -30,11 +30,10 @@ def insert_data():
 if __name__ == "__main__":
     try:
         print("Starting data ingestion...")
-        max_data_points = 10
+        max_data_points = 100
         for _ in range(max_data_points):
             insert_data()
             time.sleep(2) 
         print(f"Inserted {max_data_points} data points.")
     except Exception as e:
         print(f"Error during data ingestion: {e}")
-
